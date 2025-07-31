@@ -1,0 +1,88 @@
+:host {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 64px); // изключваме navbar-а
+  background-color: #f9f9f9;
+}
+
+.register-container {
+  width: 420px;
+  max-width: 90%;
+  padding: 32px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+  font-family: 'Poppins', sans-serif;
+  animation: fadeIn 0.4s ease-in-out;
+
+  h2 {
+    text-align: center;
+    margin-bottom: 24px;
+    font-size: 28px;
+    font-weight: 600;
+    color: #333;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+
+    div {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      font-weight: 500;
+      margin-bottom: 6px;
+      color: #333;
+    }
+
+    input {
+      padding: 10px 14px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      transition: border-color 0.3s;
+
+      &:focus {
+        outline: none;
+        border-color: #fc6c5f;
+      }
+
+      &.ng-invalid.ng-touched {
+        border-color: #ff4d4d;
+      }
+    }
+
+    .error {
+      color: #e63946;
+      font-size: 13px;
+      margin-top: 4px;
+    }
+
+    button {
+      margin-top: 8px;
+      padding: 12px;
+      background-color: #fc6c5f;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: 500;
+      transition: background-color 0.3s;
+
+      &:hover {
+        background-color: #f24c3d;
+      }
+    }
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}

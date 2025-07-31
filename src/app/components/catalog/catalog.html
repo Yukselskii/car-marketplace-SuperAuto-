@@ -1,0 +1,15 @@
+<section class="listings">
+  <h2>Car Listings</h2>
+  <div class="grid-container">
+    <article *ngFor="let car of cars">
+      <div class="car-container">
+        <img [src]="car.imageUrl" [alt]="car.model" />
+        <div class="price">
+          <p>${{ car.price | number:'1.0-0' }}</p>
+        </div>
+      </div>
+      <h3>{{ car.model }}</h3>
+      <p>Location: {{ car.location }}</p>
+    </article>
+  </div>
+</section>

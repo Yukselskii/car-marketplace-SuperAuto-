@@ -1,0 +1,42 @@
+.listings {
+  background-color: #ffffff;
+  padding: 20px;
+  margin-top: 80px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.listings article {
+  border: 1px solid #ddd;
+  padding: 10px;
+  background-color: #f9f9f9;
+  position: relative;
+}
+
+.car-container {
+  position: relative;
+  width: 100%;
+}
+
+.car-container img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+}
+
+.price {
+  position: absolute;
+  top: 213px;
+  right: 0px;
+  border: 2px solid #ff6f61;
+  border-radius: 50px;
+  background-color: #f9f9f9;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 0 30px;
+}

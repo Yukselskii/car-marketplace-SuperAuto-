@@ -1,0 +1,5 @@
+@import '../register/register.scss';
+
+.login-container {
+  @extend .register-container;
+}
