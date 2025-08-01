@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "dist/car-marketplace",
+    "public": "dist/car-marketplace/browser",
     "ignore": [
       "firebase.json",
       "**/.*",
