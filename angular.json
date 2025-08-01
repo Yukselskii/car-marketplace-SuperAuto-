@@ -26,7 +26,7 @@
           },
           "configurations": {
             "production": {
-              "baseHref": "/car-marketplace-SuperAuto/",
+              "baseHref": "/",
               "budgets": [
                 {
                   "type": "initial",
