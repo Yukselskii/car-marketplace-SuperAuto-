@@ -18,13 +18,14 @@ export class Navbar {
     if (isPlatformBrowser(this.platformId)) {
       return !!localStorage.getItem('user');
     }
-    return false; // За SSR
+    return false; 
   }
 
   logout(): void {
     if (isPlatformBrowser(this.platformId)) {
       localStorage.removeItem('user');
-      this.router.navigate(['/']);
+      localStorage.removeItem('isLoggedIn');
+      location.reload(); 
     }
   }
 }

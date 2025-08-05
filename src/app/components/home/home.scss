@@ -1,10 +1,9 @@
-
 .hero-header {
   position: relative;
   height: 100vh;
   overflow: hidden;
   flex-shrink: 0;
- padding-top: 70px; 
+  padding-top: 4.375rem; 
 }
 
 .background-video {
@@ -38,18 +37,18 @@
 }
 
 .hero-content h1 {
-  font-size: 6em;
+  font-size: 6rem;
   margin: 0;
 }
 
 .hero-content h2 {
-  font-size: 3.5em;
+  font-size: 3.5rem;
   margin: 0;
 }
 
 .hero-content p {
-  font-size: 1.1em;
-  margin-top: 10px;
+  font-size: 1.1rem; 
+  margin-top: 0.625rem; 
 }
 
 @keyframes colorChange {
